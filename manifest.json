@@ -4,8 +4,7 @@
     "version": "1.0",
     "description": "Read Web Cache Version of Web Pages",
     "action": {
-        "default_icon": "icon.png",
-        "default_popup": ""
+        "default_icon": "icon.png"
     },
     "content_scripts": [
         {
