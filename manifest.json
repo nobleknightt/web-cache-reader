@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Web Cache Reader",
+    "version": "1.0",
+    "description": "Read Web Cache Version of Web Pages",
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": ""
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://webcache.googleusercontent.com/"
+    ]
+}
